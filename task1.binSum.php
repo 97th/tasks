@@ -6,4 +6,4 @@ function binarySum(string $binFirst, string $binSecond){
     return decbin($decRes);
 }
 
-echo binarySum ('1101','101');
+echo binarySum ('1101','1101');
