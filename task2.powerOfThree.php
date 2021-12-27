@@ -15,4 +15,5 @@ function isPowerOfThree(int $number)
     }
     return print_r('false');
 }
+
 isPowerOfThree(31381059609);
