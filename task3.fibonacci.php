@@ -1,5 +1,6 @@
 <?php
-function fib(int $number){
+function fib(int $number)
+{
     switch ($number) {
         case 0:
             echo "0";
@@ -18,4 +19,5 @@ function fib(int $number){
     }
     print_r($result);
 }
+
 fib(20);
