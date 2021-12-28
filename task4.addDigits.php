@@ -1,20 +1,22 @@
 <?php
-function addDigits(int $number){
+function addDigits(int $number)
+{
     $line = strval($number);
     $numberOfDigits = strlen($line);
-    if ($numberOfDigits == 1){
+    if ($numberOfDigits == 1) {
         $result = $line;
-        return print_r($result);
+        return $result;
     }
 
-    while ($numberOfDigits != 1){
+    while ($numberOfDigits != 1) {
         $result = 0;
-        for ($i = 0; $i < $numberOfDigits; $i++){
-            $result = $result + $line[$i];
+        for ($i = 0; $i < $numberOfDigits; $i++) {
+            $result += (int)$line[$i];
         }
         $line = strval($result);
         $numberOfDigits = strlen($line);
     }
-    return print_r($result);
+    return $result;
 }
-addDigits(999);
+
+echo addDigits(95191);
