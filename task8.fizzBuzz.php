@@ -1,21 +1,23 @@
 <?php
-function fizzBuzz($begin, $end){
-    if ($begin > $end){
+function fizzBuzz($begin, $end)
+{
+    if ($begin > $end) {
         return;
     }
-    for ($i = $begin ; $i <= $end; $i++){
-        if (($i % 3 == 0) && ($i % 5 == 0)){
+    for ($i = $begin; $i <= $end; $i++) {
+        if (($i % 3 == 0) && ($i % 5 == 0)) {
             print_r ('FizzBuzz ');
         }
-        elseif ($i % 3 == 0){
+        elseif ($i % 3 == 0) {
             print_r ('Fizz ');
         }
-        elseif ($i % 5 == 0){
+        elseif ($i % 5 == 0) {
             print_r ('Buzz ');
         }
-        else{
+        else {
             print_r($i.' ');
         }
     }
 }
+
 echo (fizzBuzz(44,120));
