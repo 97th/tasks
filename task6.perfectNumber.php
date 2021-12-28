@@ -1,15 +1,16 @@
 <?php
-function isPerfect($number){
+function isPerfect($number)
+{
     $sumOfDiv = 0;
-    for ($i = 1; $i < $number; $i++){
-        if ($number % $i == 0){
+    for ($i = 1; $i < $number; $i++) {
+        if ($number % $i == 0) {
             $sumOfDiv += $i;
         }
     }
     if ($sumOfDiv == $number) {
-        return print_r('true');
+        return true;
     }
     else
-        return print_r('false');
+        return false;
 }
-isPerfect(8128);
+echo isPerfect(8128);
