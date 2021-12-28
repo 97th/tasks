@@ -12,12 +12,12 @@ function fib(int $number)
     $previous = 1;
     $prePrevious = 0;
     $result = 0;
-    for ($i = 2; $i <= $number; $i++){
+    for ($i = 2; $i <= $number; $i++) {
         $result = $previous + $prePrevious;
         $prePrevious = $previous;
         $previous = $result;
     }
-    print_r($result);
+    return $result;
 }
 
-fib(20);
+echo fib(20);
