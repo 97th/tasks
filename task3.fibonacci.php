@@ -3,11 +3,11 @@ function fib(int $number)
 {
     switch ($number) {
         case 0:
-            echo "0";
-            break;
+            $result = 0;
+            return $result;
         case 1:
-            echo "1";
-            break;
+            $result = 1;
+            return $result;
     }
     $previous = 1;
     $prePrevious = 0;
@@ -20,4 +20,4 @@ function fib(int $number)
     return $result;
 }
 
-echo fib(20);
+echo fib(1);
