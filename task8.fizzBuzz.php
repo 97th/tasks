@@ -11,7 +11,7 @@ function fizzBuzz($begin, $end)
         } else {
             print_r($i . ' ');
         }
-       }
+    }
 }
 
 echo fizzBuzz(44,120);
