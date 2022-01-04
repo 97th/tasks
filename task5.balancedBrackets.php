@@ -2,30 +2,25 @@
 function isBalanced(string $line)
 {
     if ($line === '') {
-        return print_r('true');
+        return true;
     }
     for ($i = 0; $i < strlen($line); $i++) {
-        if ($line[$i] != '(' && $line[$i] != ')') {
-            return print_r('bad line');
+        if ($line[$i] !== '(' && $line[$i] !== ')') {
+            return false;
         }
     }
     $balance = 0;
-    for ($i = 0; $i < strlen($line); $i++) {
-        if ($line[$i] == '(') {
+    $lineLength = strlen($line);
+    for ($i = 0; $i < $lineLength; $i++) {
+        if ($line[$i] === '(') {
             $balance++;
-        }
-        else {
+        } else {
             $balance--;
         }
         if ($balance < 0) {
             return false;
         }
     }
-    if ($balance > 0) {
-        return false;
-    }
-    else {
-        return true;
-    }
+    return $balance === 0;
 }
-echo isBalanced('()(())()()())()');
+echo isBalanced('()(())())))()())()');
