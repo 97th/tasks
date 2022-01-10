@@ -4,14 +4,12 @@ function isBalanced(string $line)
     if ($line === '') {
         return true;
     }
-    for ($i = 0; $i < strlen($line); $i++) {
-        if ($line[$i] !== '(' && $line[$i] !== ')') {
-            return false;
-        }
-    }
     $balance = 0;
     $lineLength = strlen($line);
     for ($i = 0; $i < $lineLength; $i++) {
+        if ($line[$i] !== '(' && $line[$i] !== ')') {
+            return false;
+        }
         if ($line[$i] === '(') {
             $balance++;
         } else {
@@ -23,4 +21,4 @@ function isBalanced(string $line)
     }
     return $balance === 0;
 }
-echo isBalanced('()(())())))()())()');
+echo isBalanced('()()');
