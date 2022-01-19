@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-class task6PerfectNumberTest extends TestCase
+class Task6PerfectNumberTest extends TestCase
 {
     public function testIsPerfect(): void
     {

@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-class task2PowerOfThreeTest extends TestCase
+class Task2PowerOfThreeTest extends TestCase
 {
     public function testIsPowerOfThree(): void
     {

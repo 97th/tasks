@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class task8FizzBuzzTest extends TestCase
+class Task8FizzBuzzTest extends TestCase
 {
     public function testFizzBuzz(): void
     {

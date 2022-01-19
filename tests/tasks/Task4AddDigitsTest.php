@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-class task4AddDigitsTest extends TestCase
+class Task4AddDigitsTest extends TestCase
 {
     public function testAddDigits(): void
     {

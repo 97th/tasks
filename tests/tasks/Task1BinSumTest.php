@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class task1BinSumTest extends TestCase
+class Task1BinSumTest extends TestCase
 {
     public function testBinarySum(): void
     {

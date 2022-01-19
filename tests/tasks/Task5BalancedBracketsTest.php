@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class task5BalancedBracketsTest extends TestCase
+class Task5BalancedBracketsTest extends TestCase
 {
     public function testIsBalanced(): void
     {

@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class task7HappyTicketTest extends TestCase
+class Task7HappyTicketTest extends TestCase
 {
     public function testIsHappy(): void
     {

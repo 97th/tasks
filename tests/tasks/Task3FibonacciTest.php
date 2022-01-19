@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-class task3FibonacciTest extends TestCase
+class Task3FibonacciTest extends TestCase
 {
     public function testFib(): void
     {
