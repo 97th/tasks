@@ -7,7 +7,9 @@
             "email": "alapshin@plesk.com"
         }
     ],
-    "require": {},
+    "require": {
+        "squizlabs/php_codesniffer": "*"
+    },
     "autoload": {
     "psr-4": {
         "MyApp\\": "src/"
@@ -15,6 +17,9 @@
     },
     "require-dev": {
               "phpunit/phpunit": "9.5"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "phpcs ./src"
     }
 }
-

@@ -6,6 +6,12 @@ class Task2PowerOfThree
 {
     public function isPowerOfThree(int $number)
     {
+        if (strval($number) === '') {
+            throw new \Exception('empty value');
+        }
+        if (!preg_match('~^[0123456789]+$~', strval($number))) {
+            throw new \Exception('not an int number');
+        }
         if ($number === 1) {
             return true;
         }

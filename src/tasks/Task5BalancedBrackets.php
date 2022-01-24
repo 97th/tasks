@@ -6,13 +6,13 @@ class Task5BalancedBrackets
     public function isBalanced(string $line)
     {
         if ($line === '') {
-            return true;
+            throw new \Exception('empty value');
         }
         $balance = 0;
         $lineLength = strlen($line);
         for ($i = 0; $i < $lineLength; $i++) {
             if ($line[$i] !== '(' && $line[$i] !== ')') {
-                return false;
+                throw new \Exception('available values "(" and ")" only');
             }
             if ($line[$i] === '(') {
                 $balance++;

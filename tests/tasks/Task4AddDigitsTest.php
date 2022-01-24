@@ -4,9 +4,23 @@ use PHPUnit\Framework\TestCase;
 
 class Task4AddDigitsTest extends TestCase
 {
-    public function testAddDigits(): void
+    /**
+     * @dataProvider addDigitsProvider
+     */
+    public function testAddDigits($expected, $num): void
     {
         $task4 = new \MyApp\tasks\task4AddDigits();
-        self::assertEquals(2, $task4->addDigits(209));
+        self::assertEquals($expected, $task4->addDigits($num));
     }
+
+    public function addDigitsProvider(): array
+    {
+        return [
+            [2,209],
+            [3,111],
+            [5,122],
+            [1,541],
+        ];
+    }
+
 }
