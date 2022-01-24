@@ -27,4 +27,3 @@ class Task7HappyTicket
         return $firstRes === $secondRes;
     }
 }
-//echo isHappy(212005);

@@ -8,12 +8,12 @@ class Task5BalancedBrackets
         if ($line === '') {
             throw new \Exception('empty value');
         }
+        if (!preg_match('~^[()]+$~', $line)) {
+            throw new \Exception('available values "(" and ")" only');
+        }
         $balance = 0;
         $lineLength = strlen($line);
         for ($i = 0; $i < $lineLength; $i++) {
-            if ($line[$i] !== '(' && $line[$i] !== ')') {
-                throw new \Exception('available values "(" and ")" only');
-            }
             if ($line[$i] === '(') {
                 $balance++;
             } else {
@@ -26,4 +26,3 @@ class Task5BalancedBrackets
         return $balance === 0;
     }
 }
-//echo isBalanced('()()');

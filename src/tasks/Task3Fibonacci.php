@@ -5,6 +5,9 @@ class Task3Fibonacci
 {
     public function fib(int $number)
     {
+        if ($number < 0) {
+            throw new \Exception ('value must be more or equal zero');
+        }
         switch ($number) {
             case 0:
                 $result = 0;
@@ -24,4 +27,3 @@ class Task3Fibonacci
         return $result;
     }
 }
-//echo fib(1);

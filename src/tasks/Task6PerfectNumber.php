@@ -17,4 +17,3 @@ class Task6PerfectNumber
         return $sumOfDiv === $number;
     }
 }
-//echo isPerfect(8128);

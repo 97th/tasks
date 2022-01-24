@@ -17,6 +17,4 @@ class Task1BinSum
         $decRes = $decSecond + $decFirst;
         return decbin($decRes);
     }
-
-    //echo binarySum ('1101', '1101');
 }

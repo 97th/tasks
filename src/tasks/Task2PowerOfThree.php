@@ -24,4 +24,3 @@ class Task2PowerOfThree
         return false;
     }
 }
-//echo isPowerOfThree(31381059609);

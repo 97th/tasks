@@ -23,4 +23,3 @@ class Task4AddDigits
         return $result;
     }
 }
-//echo addDigits(95191);
