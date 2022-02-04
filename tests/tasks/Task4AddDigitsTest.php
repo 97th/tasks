@@ -1,5 +1,7 @@
 <?php
 
+namespace MyApp\tests\tasks;
+
 use PHPUnit\Framework\TestCase;
 
 class Task4AddDigitsTest extends TestCase
@@ -16,11 +18,10 @@ class Task4AddDigitsTest extends TestCase
     public function addDigitsProvider(): array
     {
         return [
-            [2,209],
-            [3,111],
-            [5,122],
-            [1,541],
+            [2, 209],
+            [3, 111],
+            [5, 122],
+            [1, 541],
         ];
     }
-
 }

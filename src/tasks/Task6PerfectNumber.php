@@ -1,9 +1,10 @@
 <?php
+
 namespace MyApp\tasks;
 
 class Task6PerfectNumber
 {
-    public function isPerfect($number)
+    public function isPerfect($number): bool
     {
         if ($number === 0) {
             return false;

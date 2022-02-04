@@ -1,15 +1,16 @@
 <?php
+
 namespace MyApp\tasks;
 
 class Task7HappyTicket
 {
-    public function isHappy($number)
+    public function isHappy($number): bool
     {
         $len = strlen($number);
         if ($len === 0) {
             throw new \Exception('Not a ticket');
         }
-        $line = strval($number);
+        $line = (string)$number;
         $numberOfDigits = strlen($line);
         if ($numberOfDigits % 2 !== 0) {
             throw new \Exception('the number is odd');

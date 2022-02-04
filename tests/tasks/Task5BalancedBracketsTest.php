@@ -1,10 +1,13 @@
 <?php
+
+namespace MyApp\tests\tasks;
+
 use PHPUnit\Framework\TestCase;
 
 class Task5BalancedBracketsTest extends TestCase
 {
     /**
-     * @dataProvider balancedBracketsWrong
+     * @dataProvider balancedBracketsWrongProvider
      */
     public function testBalancedBracketsWrong($line)
     {
@@ -12,7 +15,7 @@ class Task5BalancedBracketsTest extends TestCase
         $this->expectException('Exception');
         $task5->isBalanced($line);
     }
-    public function balancedBracketsWrong(): array
+    public function balancedBracketsWrongProvider(): array
     {
         return [
             [''],

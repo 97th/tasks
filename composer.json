@@ -20,6 +20,6 @@
     },
     "scripts": {
         "test": "phpunit",
-        "lint": "phpcs ./src"
+        "lint": "phpcs --standard=PSR12 ./src"
     }
 }

@@ -1,9 +1,10 @@
 <?php
+
 namespace MyApp\tasks;
 
 class Task5BalancedBrackets
 {
-    public function isBalanced(string $line)
+    public function isBalanced(string $line): bool
     {
         if ($line === '') {
             throw new \Exception('empty value');

@@ -1,5 +1,7 @@
 <?php
 
+namespace MyApp\tests\tasks;
+
 use PHPUnit\Framework\TestCase;
 
 class Task3FibonacciTest extends TestCase
@@ -10,6 +12,7 @@ class Task3FibonacciTest extends TestCase
         $this->expectException('Exception');
         $task3->fib(-3);
     }
+
     /**
      * @dataProvider fibonacciProvider
      */
@@ -22,9 +25,9 @@ class Task3FibonacciTest extends TestCase
     public function fibonacciProvider(): array
     {
         return [
-            [6765,20],
-            [1,1],
-            [0,0],
+            [6765, 20],
+            [1, 1],
+            [0, 0],
         ];
     }
 }

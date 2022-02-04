@@ -4,12 +4,12 @@ namespace MyApp\tasks;
 
 class Task2PowerOfThree
 {
-    public function isPowerOfThree(int $number)
+    public function isPowerOfThree(int $number): bool
     {
-        if (strval($number) === '') {
+        if ((string)$number === '') {
             throw new \Exception('empty value');
         }
-        if (!preg_match('~^[0123456789]+$~', strval($number))) {
+        if (!preg_match('~^[0123456789]+$~', (string)$number)) {
             throw new \Exception('not an int number');
         }
         if ($number === 1) {

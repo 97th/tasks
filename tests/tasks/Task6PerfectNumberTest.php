@@ -1,5 +1,7 @@
 <?php
 
+namespace MyApp\tests\tasks;
+
 use PHPUnit\Framework\TestCase;
 
 class Task6PerfectNumberTest extends TestCase

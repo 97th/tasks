@@ -1,9 +1,10 @@
 <?php
+
 namespace MyApp\tasks;
 
 class Task8FizzBuzz
 {
-    public function fizzBuzz(int $begin, int $end)
+    public function fizzBuzz(int $begin, int $end): string
     {
         if ($begin > $end) {
             throw new \Exception('end value less than start');
@@ -17,7 +18,7 @@ class Task8FizzBuzz
             } elseif ($i % 5 === 0) {
                 $output .= 'Buzz ';
             } else {
-                $output .= strval($i) . ' ';
+                $output .= (string)$i . ' ';
             }
         }
         return $output;

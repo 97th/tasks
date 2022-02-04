@@ -1,10 +1,13 @@
 <?php
+
+namespace MyApp\tests\tasks;
+
 use PHPUnit\Framework\TestCase;
 
 class Task1BinSumTest extends TestCase
 {
     /**
-     * @dataProvider binarySumProvider
+     * @dataProvider binarySumWrongProvider
      */
     public function testBinarySumWrong($num1, $num2)
     {
@@ -13,7 +16,7 @@ class Task1BinSumTest extends TestCase
         $task1->binarySum($num1, $num2);
     }
 
-    public function binarySumProvider(): array
+    public function binarySumWrongProvider(): array
     {
         return [
             ['','10'],
@@ -26,8 +29,8 @@ class Task1BinSumTest extends TestCase
     public function testBinarySum(): void
     {
         $task1 = new \MyApp\tasks\task1BinSum();
-        $actual = $task1->binarySum(111,1);
+        $actual = $task1->binarySum(111, 1);
         $expected = '1000';
-        self::assertEquals($actual,$expected);
+        self::assertEquals($actual, $expected);
     }
 }
