@@ -15,7 +15,7 @@ class App
 
     public function run(): void
     {
-        $this->logger->info('3678866');
+        $this->logger->info('test passed');
         $this->logger->warn('auch');
         $this->logger->warn('auch2');
         $this->logger->err('oh no!');

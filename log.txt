@@ -1,0 +1,22 @@
+[INFO] 3678866
+[WARNING] auch
+[INFO] 3678866
+[WARNING] auch
+[WARNING] auch2
+[ERR] oh no!
+[INFO] 3678866
+[WARNING] auch
+[WARNING] auch2
+[ERR] oh no!
+[INFO] 3678866
+[WARNING] auch
+[WARNING] auch2
+[ERR] oh no!
+[INFO] 3678866
+[WARNING] auch
+[WARNING] auch2
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[WARNING] auch2
+[ERR] oh no!
