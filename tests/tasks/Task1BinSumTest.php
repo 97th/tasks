@@ -4,8 +4,6 @@ namespace MyApp\tests\tasks;
 
 use PHPUnit\Framework\TestCase;
 
-
-
 class Task1BinSumTest extends TestCase
 {
     /**

@@ -15,6 +15,13 @@ class Task1BinSum
         $decFirst = bindec($binFirst);
         $decSecond = bindec($binSecond);
         $decRes = $decSecond + $decFirst;
+
+        $config = require __DIR__ . '/../../config.php';
+        $loggerFactory = new \MyApp\Logger\LoggerFactory($config);
+        $logger = $loggerFactory->createLogger();
+        $app = new \MyApp\App($logger);
+        $app->run();
+
         return decbin($decRes);
     }
 }
