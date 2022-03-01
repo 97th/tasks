@@ -9,7 +9,7 @@ class Task4AddDigitsTest extends TestCase
     /**
      * @dataProvider addDigitsProvider
      */
-    public function testAddDigits($expected, $num): void
+    public function testAddDigits(int $expected, int $num): void
     {
         $task4 = new \MyApp\tasks\task4AddDigits();
         self::assertEquals($expected, $task4->addDigits($num));

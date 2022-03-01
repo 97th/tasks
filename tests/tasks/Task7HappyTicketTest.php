@@ -24,10 +24,11 @@ class Task7HappyTicketTest extends TestCase
             ['123'],
         ];
     }
+
     /**
      * @dataProvider isHappyProvider
      */
-    public function testIsHappy($expected, $num): void
+    public function testIsHappy(bool $expected, int $num): void
     {
         $task7 = new \MyApp\tasks\task7HappyTicket();
         self::assertEquals($expected, $task7->isHappy($num));

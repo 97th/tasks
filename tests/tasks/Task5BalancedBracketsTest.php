@@ -9,7 +9,7 @@ class Task5BalancedBracketsTest extends TestCase
     /**
      * @dataProvider balancedBracketsWrongProvider
      */
-    public function testBalancedBracketsWrong($line)
+    public function testBalancedBracketsWrong(string $line)
     {
         $task5 = new \MyApp\tasks\Task5BalancedBrackets();
         $this->expectException('Exception');

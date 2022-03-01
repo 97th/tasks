@@ -4,7 +4,7 @@ namespace MyApp\Logger;
 
 abstract class AbstractLogger implements LoggerInterface
 {
-    abstract function log(string $msg): void;
+    abstract protected function log(string $msg): void;
 
     public function err(string $msg): void
     {

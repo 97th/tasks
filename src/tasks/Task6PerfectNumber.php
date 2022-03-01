@@ -4,7 +4,7 @@ namespace MyApp\tasks;
 
 class Task6PerfectNumber
 {
-    public function isPerfect($number): bool
+    public function isPerfect(int $number): bool
     {
         if ($number === 0) {
             return false;

@@ -4,7 +4,7 @@ namespace MyApp\tasks;
 
 class Task7HappyTicket
 {
-    public function isHappy($number): bool
+    public function isHappy(int $number): bool
     {
         $len = strlen($number);
         if ($len === 0) {

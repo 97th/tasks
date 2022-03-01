@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class Task3FibonacciTest extends TestCase
 {
-    public function testFibonacciWrong()
+    public function testFibonacciWrong(): void
     {
         $task3 = new \MyApp\tasks\Task3Fibonacci();
         $this->expectException('Exception');
@@ -16,7 +16,7 @@ class Task3FibonacciTest extends TestCase
     /**
      * @dataProvider fibonacciProvider
      */
-    public function testFib($result, $num): void
+    public function testFib(int $result, int $num): void
     {
         $task3 = new \MyApp\tasks\task3Fibonacci();
         self::assertEquals($result, $task3->fib($num));

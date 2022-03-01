@@ -17,7 +17,7 @@ class Task2PowerOfThreeTest extends TestCase
     /**
      * @dataProvider isPowerOfThreeWrong
      */
-    public function testIsPowerOfThreeWrong($int)
+    public function testIsPowerOfThreeWrong(string $int)
     {
         $task2 = new \MyApp\tasks\Task2PowerOfThree();
         $this->expectException('Exception');

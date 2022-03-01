@@ -9,7 +9,7 @@ class Task1BinSumTest extends TestCase
     /**
      * @dataProvider binarySumWrongProvider
      */
-    public function testBinarySumWrong($num1, $num2)
+    public function testBinarySumWrong(string $num1, string $num2)
     {
         $task1 = new \MyApp\tasks\Task1BinSum();
         $this->expectException('Exception');
@@ -31,7 +31,7 @@ class Task1BinSumTest extends TestCase
         $task1 = new \MyApp\tasks\task1BinSum();
         $actual = $task1->binarySum(111, 1);
         $expected = '1000';
-        self::assertEquals($actual, $expected);
+        self::assertEquals($expected, $actual);
 
         $config = require __DIR__ . '/../../config.php';
         $loggerFactory = new \MyApp\Logger\LoggerFactory($config);
