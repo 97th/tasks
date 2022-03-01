@@ -17,7 +17,6 @@ class App
     {
         $this->logger->info('test passed');
         $this->logger->warn('auch');
-        $this->logger->warn('auch2');
         $this->logger->err('oh no!');
 
         echo 'ok';

@@ -2,6 +2,9 @@
 
 namespace MyApp\tests\tasks;
 
+use MyApp\Logger\FakeLogger;
+use MyApp\Logger\FileLogger;
+use MyApp\Logger\LoggerInterface;
 use PHPUnit\Framework\TestCase;
 
 class Task1BinSumTest extends TestCase
@@ -25,7 +28,23 @@ class Task1BinSumTest extends TestCase
             ['10','12'],
         ];
     }
+/*
+    private LoggerInterface $logger;
 
+    public function __construct(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+    }
+
+    public function run(): void
+    {
+        $this->logger->info('test passed');
+        $this->logger->warn('auch');
+        $this->logger->err('oh no!');
+
+        echo 'ok';
+    }
+*/
     public function testBinarySum(): void
     {
         $task1 = new \MyApp\tasks\task1BinSum();

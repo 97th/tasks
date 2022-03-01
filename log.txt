@@ -1,8 +1,6 @@
+[INFO] success
 [INFO] test passed
 [WARNING] auch
 [WARNING] auch2
 [ERR] oh no!
-[INFO] test passed
-[WARNING] auch
-[WARNING] auch2
-[ERR] oh no!
+[INFO] success
