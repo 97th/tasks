@@ -2,7 +2,7 @@
 
 return [
   'logger' => [
-      'type' => 'stdout',
+      'type' => 'file',
       'filename' => __DIR__ . '/log.txt',
   ],
 ];

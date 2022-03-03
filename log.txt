@@ -4,3 +4,87 @@
 [WARNING] auch2
 [ERR] oh no!
 [INFO] success
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
+[INFO] test passed
+[WARNING] auch
+[ERR] oh no!
