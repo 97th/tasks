@@ -9,8 +9,6 @@ use PHPUnit\Framework\TestCase;
 
 class Task1BinSumTest extends TestCase
 {
-    //private FakeLogger $fakeLogger;
-
     /**
      * @dataProvider binarySumWrongProvider
      */

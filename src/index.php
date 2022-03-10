@@ -7,7 +7,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 //echo (new \MyApp\tasks\task5BalancedBrackets())->isBalanced('())h') . PHP_EOL;
 //echo (new \MyApp\tasks\task6PerfectNumber())->isPerfect(6) . PHP_EOL;
 //echo (new \MyApp\tasks\task7HappyTicket())->isHappy(323008) . PHP_EOL;
-//echo (new \MyApp\tasks\task8FizzBuzz())->fizzBuzz(4, 10) . PHP_EOL;
+echo (new \MyApp\tasks\task8FizzBuzz())->fizzBuzz(4, 10) . PHP_EOL;
 
 
 //$logger = new \MyApp\Logger\StdoutLogger();
@@ -26,4 +26,3 @@ echo (new \MyApp\tasks\task3Fibonacci($logger))->fib(0) . PHP_EOL;
 
 //$app = new \MyApp\App($logger);
 //$app->run();
-

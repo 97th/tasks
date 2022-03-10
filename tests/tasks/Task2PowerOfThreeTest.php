@@ -17,7 +17,7 @@ class Task2PowerOfThreeTest extends TestCase
     /**
      * @dataProvider isPowerOfThreeWrong
      */
-    public function testIsPowerOfThreeWrong(string $int)
+    public function testIsPowerOfThreeWrong(int $int)
     {
         $task2 = new \MyApp\tasks\Task2PowerOfThree();
         $this->expectException('Exception');
@@ -26,8 +26,8 @@ class Task2PowerOfThreeTest extends TestCase
     public function isPowerOfThreeWrong(): array
     {
         return [
-            [''],
-            ['8gghjj'],
+            [-9],
+            [-3],
         ];
     }
 }

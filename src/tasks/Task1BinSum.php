@@ -6,7 +6,7 @@ use MyApp\Logger\LoggerInterface;
 
 class Task1BinSum
 {
-   private LoggerInterface $logger;
+    private LoggerInterface $logger;
 
     public function __construct(LoggerInterface $logger)
     {

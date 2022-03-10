@@ -4,9 +4,10 @@ namespace MyApp\tasks;
 
 class Task8FizzBuzz
 {
-    public function fizzBuzz(int $begin, int $end): void
+    public function fizzBuzz(int $begin, int $end): string
     {
-        echo implode('', $this->generateFizzBuzz($begin, $end));
+        $line = implode('', $this->generateFizzBuzz($begin, $end));
+        return $line;
     }
     public function generateFizzBuzz(int $begin, int $end): array
     {

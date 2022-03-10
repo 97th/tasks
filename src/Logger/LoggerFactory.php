@@ -1,6 +1,5 @@
 <?php
 
-
 namespace MyApp\Logger;
 
 class LoggerFactory

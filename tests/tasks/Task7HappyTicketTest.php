@@ -9,7 +9,7 @@ class Task7HappyTicketTest extends TestCase
     /**
      * @dataProvider isHappyWrongProvider
      */
-    public function testIsHappyWrong($num)
+    public function testIsHappyWrong(int $num)
     {
         $task7 = new \MyApp\tasks\task7HappyTicket();
 
@@ -20,8 +20,8 @@ class Task7HappyTicketTest extends TestCase
     public function isHappyWrongProvider(): array
     {
         return [
-            [''],
-            ['123'],
+            [0],
+            [123],
         ];
     }
 
@@ -37,8 +37,8 @@ class Task7HappyTicketTest extends TestCase
     public function isHappyProvider(): array
     {
         return [
-            [true, '323008'],
-            [false, '01'],
+            [true, 323008],
+            [false, 21],
         ];
     }
 }
