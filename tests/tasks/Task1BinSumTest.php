@@ -1,6 +1,6 @@
 <?php
 
-//namespace MyApp\tests\tasks;
+namespace MyApp;
 
 use MyApp\Logger\FakeLogger;
 use MyApp\Logger\FileLogger;
@@ -14,19 +14,18 @@ class Task1BinSumTest extends TestCase
      */
     public function testBinarySumWrong(string $num1, string $num2)
     {
-        $fakeLogger = new MyApp\Logger\FakeLogger();
+        $fakeLogger = new Logger\FakeLogger();
         $task1 = new \MyApp\tasks\Task1BinSum($fakeLogger);
 
-       try {
-           $this->expectException('Exception');
-           $task1->binarySum($num1, $num2);
-       } catch (\Throwable $e) {
-
-           $expected = $e->getMessage();
-           $actual = $fakeLogger->getLastMsg();
-           self::assertEquals($expected, $actual);
-           throw $e;
-       }
+        try {
+            $this->expectException('Exception');
+            $task1->binarySum($num1, $num2);
+        } catch (\Throwable $e) {
+            $expected = $e->getMessage();
+            $actual = $fakeLogger->getLastMsg();
+            self::assertEquals($expected, $actual);
+            throw $e;
+        }
     }
 
     public function binarySumWrongProvider(): array
@@ -42,7 +41,7 @@ class Task1BinSumTest extends TestCase
 
     public function testBinarySum(): void
     {
-        $fakeLogger = new MyApp\Logger\FakeLogger();
+        $fakeLogger = new Logger\FakeLogger();
         $task1 = new \MyApp\tasks\task1BinSum($fakeLogger);
         $actual = $task1->binarySum(111, 1);
         $expected = '1000';
