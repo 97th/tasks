@@ -1,19 +1,20 @@
 <?php
+
 namespace MyApp\tasks;
 
-class task5BalancedBrackets
+class Task5BalancedBrackets
 {
-    public function isBalanced(string $line)
+    public function isBalanced(string $line): bool
     {
         if ($line === '') {
-            return true;
+            throw new \Exception('empty value');
+        }
+        if (!preg_match('~^[()]+$~', $line)) {
+            throw new \Exception('available values "(" and ")" only');
         }
         $balance = 0;
         $lineLength = strlen($line);
         for ($i = 0; $i < $lineLength; $i++) {
-            if ($line[$i] !== '(' && $line[$i] !== ')') {
-                return false;
-            }
             if ($line[$i] === '(') {
                 $balance++;
             } else {
@@ -26,4 +27,3 @@ class task5BalancedBrackets
         return $balance === 0;
     }
 }
-//echo isBalanced('()()');

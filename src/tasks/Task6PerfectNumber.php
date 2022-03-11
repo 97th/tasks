@@ -1,9 +1,10 @@
 <?php
+
 namespace MyApp\tasks;
 
-class task6PerfectNumber
+class Task6PerfectNumber
 {
-    public function isPerfect($number)
+    public function isPerfect(int $number): bool
     {
         if ($number === 0) {
             return false;
@@ -17,4 +18,3 @@ class task6PerfectNumber
         return $sumOfDiv === $number;
     }
 }
-//echo isPerfect(8128);

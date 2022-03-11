@@ -1,26 +1,26 @@
 <?php
+
 namespace MyApp\tasks;
 
-class task4AddDigits
+class Task4AddDigits
 {
-    public function addDigits(int $number)
+    public function addDigits(int $number): int
     {
-        $line = strval($number);
+        $line = (string)$number;
         $numberOfDigits = strlen($line);
-        if ($numberOfDigits == 1) {
+        if ($numberOfDigits === 1) {
             $result = $line;
             return $result;
         }
 
-        while ($numberOfDigits != 1) {
+        while ($numberOfDigits !== 1) {
             $result = 0;
             for ($i = 0; $i < $numberOfDigits; $i++) {
                 $result += (int)$line[$i];
             }
-            $line = strval($result);
+            $line = (string)$result;
             $numberOfDigits = strlen($line);
         }
         return $result;
     }
 }
-//echo addDigits(95191);
