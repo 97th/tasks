@@ -46,11 +46,5 @@ class Task1BinSumTest extends TestCase
         $actual = $task1->binarySum(111, 1);
         $expected = '1000';
         self::assertEquals($expected, $actual);
-
-        $config = require __DIR__ . '/../../config.php';
-        $loggerFactory = new \MyApp\Logger\LoggerFactory($config);
-        $logger = $loggerFactory->createLogger();
-        $app = new \MyApp\App($logger);
-        $app->run();
     }
 }
