@@ -10,6 +10,7 @@ class Task3Fibonacci
     {
         $this->logger = $logger;
     }
+
     public function fib(int $number): int
     {
         if ($number < 0) {
